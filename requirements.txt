@@ -3,7 +3,7 @@ groq==1.0.0
 python-dotenv==1.0.1
 
 # Web UI
-streamlit==1.29.0
+streamlit==1.47.1
 rich==13.9.4
 
 # Speech recognition (file-based only on cloud — see requirements-local.txt for mic support)
