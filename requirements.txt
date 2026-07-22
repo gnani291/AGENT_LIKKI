@@ -1,0 +1,41 @@
+# AI Brain
+groq==1.0.0
+python-dotenv==1.0.1
+
+# Web UI
+streamlit==1.29.0
+rich==13.9.4
+
+# Speech recognition (file-based only on cloud — see requirements-local.txt for mic support)
+SpeechRecognition==3.14.5
+
+# Text to speech
+gTTS==2.5.1
+# pyttsx3 intentionally omitted here — it's only used by main_cli.py (local terminal mode)
+# and needs a local sound device / espeak install that a cloud deploy doesn't have.
+
+# OCR
+pillow==10.0.0
+opencv-python-headless==4.8.1.78
+pytesseract==0.3.13
+
+# Web search
+duckduckgo-search==8.1.1
+
+# YouTube download + audio extraction
+yt-dlp>=2024.4.9
+
+# Audio/video transcription (no triton dependency, CPU-friendly — fixes the
+# "unsatisfiable requirements" error from openai-whisper on Streamlit Cloud)
+faster-whisper==1.0.3
+
+# Shared deps / pinned for Streamlit compatibility
+numpy==1.25.2
+importlib-metadata==6.11.0
+markdown-it-py==4.0.0
+mdurl==0.1.2
+packaging>=23.0,<24
+protobuf==4.25.8
+tenacity==8.5.0
+tzlocal==5.3.1
+validators==0.35.0

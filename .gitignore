@@ -1,0 +1,27 @@
+# Environment variables
+.env
+.env.*
+
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Runtime-generated media (downloaded videos, uploaded audio, TTS output)
+# These are created while the app runs and shouldn't bloat the repo/deploy.
+downloads/*
+!downloads/.gitkeep
+uploads/*
+!uploads/.gitkeep

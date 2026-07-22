@@ -1,0 +1,14 @@
+# Install these ON TOP of requirements.txt when running LIKKI locally
+# (streamlit run app.py or python main_cli.py) to enable:
+#   - live microphone input (voice_io.listen_from_mic)
+#   - offline text-to-speech in the CLI (voice_io.speak_cli)
+#
+#   pip install -r requirements.txt -r requirements-local.txt
+#
+# These are NOT installed on Streamlit Cloud: pyaudio needs PortAudio dev
+# headers + a real sound device, and pyttsx3 needs a local TTS engine
+# (espeak on Linux) — neither exists on a headless cloud container, and a
+# remote server has no access to a user's browser-side microphone anyway.
+
+pyaudio==0.2.13
+pyttsx3==2.90
