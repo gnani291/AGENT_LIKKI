@@ -1,15 +1,3 @@
-"""
-transcribe.py
-faster-whisper based speech-to-text for uploaded audio files (and audio
-pulled from downloaded YouTube videos). Kept separate from
-voice_io.listen_from_mic, which is for short live microphone commands.
-
-Uses faster-whisper instead of openai-whisper: same Whisper models, but no
-triton dependency (which has no compatible wheels on newer Python versions
-and caused Streamlit Cloud's dependency resolution to fail), and it runs
-noticeably faster on CPU-only hosts like Streamlit Community Cloud.
-"""
-
 from faster_whisper import WhisperModel
 
 _model_cache = {}
