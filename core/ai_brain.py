@@ -1,9 +1,3 @@
-"""
-ai_brain.py
-Core LLM brain (Groq) + the voice/text command router that decides
-which feature of the assistant a query should go to.
-"""
-
 import os
 import re
 from dotenv import load_dotenv
