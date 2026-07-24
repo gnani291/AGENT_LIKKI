@@ -1,14 +1,6 @@
-"""
-ocr.py
-Image -> text extraction. Plain pytesseract by default, with an optional
-OpenCV preprocessing pass (grayscale + adaptive threshold) that usually
-improves accuracy on noisy / low-contrast screenshots and photos.
-"""
-
 import numpy as np
 import pytesseract
 from PIL import Image
-
 
 def extract_text_from_image(image: Image.Image, enhance: bool = True) -> str:
     try:
