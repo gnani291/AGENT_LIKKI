@@ -1,8 +1,6 @@
 from faster_whisper import WhisperModel
 
 _model_cache = {}
-
-
 def _get_model(model_size: str = "base"):
     if model_size not in _model_cache:
         # CPU + int8 keeps memory/CPU usage low, which matters on
