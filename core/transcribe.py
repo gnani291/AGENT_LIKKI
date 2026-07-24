@@ -3,8 +3,6 @@ from faster_whisper import WhisperModel
 _model_cache = {}
 def _get_model(model_size: str = "base"):
     if model_size not in _model_cache:
-        # CPU + int8 keeps memory/CPU usage low, which matters on
-        # Streamlit Cloud's free-tier resource limits.
         _model_cache[model_size] = WhisperModel(model_size, device="cpu", compute_type="int8")
     return _model_cache[model_size]
 
