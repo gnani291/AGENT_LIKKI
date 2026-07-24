@@ -1,16 +1,3 @@
-"""
-voice_io.py
-Speech input (microphone -> text) and speech output (text -> audio).
-
-TTS uses gTTS (cloud/OS-independent, returns audio bytes -> works cleanly
-inside Streamlit via st.audio). pyttsx3 is kept only for the offline CLI
-assistant (main_cli.py) since it needs a local sound device anyway.
-
-Note: microphone access via speech_recognition only works when the app is
-run LOCALLY (python/streamlit running on the same machine as the mic).
-It will not work on a remote server like Streamlit Community Cloud.
-"""
-
 from io import BytesIO
 
 import speech_recognition as sr
