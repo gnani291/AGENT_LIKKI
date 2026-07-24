@@ -1,11 +1,4 @@
-"""
-web_search.py
-DuckDuckGo text search (kept from LIKKI_AI since it already worked well).
-"""
-
 from duckduckgo_search import DDGS
-
-
 def search_web(query: str, max_results: int = 5) -> list[dict]:
     results = []
     try:
