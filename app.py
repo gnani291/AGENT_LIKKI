@@ -1,20 +1,3 @@
-"""
-app.py
-LIKKI AI - Unified Multimodal Assistant
-
-One voice/text command box routes to every capability:
-  - conversational chat            (Groq LLM)
-  - web search                     (DuckDuckGo)
-  - YouTube video download
-  - YouTube transcribe + summarize (yt-dlp + Whisper + Groq)
-  - image text extraction / OCR    (pytesseract)
-  - audio file transcription       (Whisper)
-  - text-to-speech playback        (gTTS)
-
-Run locally with: streamlit run app.py
-(Microphone input only works when Streamlit is running on your own machine.)
-"""
-
 import os
 
 import streamlit as st
