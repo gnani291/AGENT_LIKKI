@@ -1,13 +1,5 @@
-"""
-main_cli.py
-Terminal voice-loop version of LIKKI (no browser needed).
-Say "exit", "stop", or "bye" to quit.
-"""
-
 from datetime import datetime
-
 from core import ai_brain, ocr, transcribe, voice_io, web_search, youtube_tools
-
 
 def handle_intent(query: str):
     intent_data = ai_brain.classify_intent(query)
