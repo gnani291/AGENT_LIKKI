@@ -1,9 +1,3 @@
-"""
-youtube_tools.py
-YouTube video download + audio-only extraction (used as the first stage of
-the "transcribe & summarize a YouTube video" pipeline).
-"""
-
 import os
 import uuid
 
