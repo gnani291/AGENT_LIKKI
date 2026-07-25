@@ -9,7 +9,7 @@ st.set_page_config(page_title="LIKKI AI - Multimodal Assistant", page_icon="🤖
 st.title("🤖 LIKKI AI - Unified Multimodal Assistant")
 st.caption("One command box. Every feature. Type it or say it.")
 
-# ---------------------------------------------------------------- SESSION STATE
+# SESSION STATE
 defaults = {
     "chat_history": [],
     "query": "",
@@ -21,7 +21,7 @@ for k, v in defaults.items():
     if k not in st.session_state:
         st.session_state[k] = v
 
-# ---------------------------------------------------------------- SIDEBAR
+# SIDEBAR
 with st.sidebar:
     st.header("Settings")
     enable_voice_input = st.checkbox("Enable microphone input", value=False)
@@ -40,7 +40,7 @@ with st.sidebar:
         "- `read this out loud`"
     )
 
-# ---------------------------------------------------------------- COMMAND BOX
+# COMMAND BOX
 col1, col2 = st.columns([1, 3])
 
 with col1:
@@ -65,7 +65,7 @@ with col2:
 
 st.markdown("---")
 
-# ---------------------------------------------------------------- FILE INPUTS (for context-aware voice commands)
+# FILE INPUTS (for context-aware voice commands)
 fcol1, fcol2 = st.columns(2)
 
 with fcol1:
@@ -93,7 +93,7 @@ with fcol2:
 
 st.markdown("---")
 
-# ---------------------------------------------------------------- COMMAND ROUTER
+# COMMAND ROUTER
 if st.session_state.query:
     query = st.session_state.query
     st.session_state.chat_history.append({"role": "user", "content": query})
