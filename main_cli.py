@@ -1,6 +1,7 @@
 from datetime import datetime
 from core import ai_brain, ocr, transcribe, voice_io, web_search, youtube_tools
 
+
 def handle_intent(query: str):
     intent_data = ai_brain.classify_intent(query)
     intent = intent_data["intent"]
