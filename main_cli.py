@@ -31,7 +31,6 @@ def handle_intent(query: str):
 
     return ai_brain.get_ai_response(query)
 
-
 def main():
     print("================================")
     print(" LIKKI AI Assistant (CLI mode) ")
