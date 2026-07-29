@@ -46,7 +46,6 @@ def text_to_speech_bytes(text: str, lang: str = "en") -> bytes:
     buf.seek(0)
     return buf.read()
 
-
 def speak_cli(text: str):
     """Offline speech output for the terminal assistant (main_cli.py)."""
     try:
