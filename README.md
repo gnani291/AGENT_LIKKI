@@ -1,4 +1,5 @@
 # LIKKI AI - Unified Multimodal Assistant
+DEMO VIDEO :-https://drive.google.com/file/d/1y3zLGCnzeb3ddVfCyzmh-QQlx3Cm2s1R/view
 
 A merge of two earlier projects — **LIKKI_AI** (voice assistant, chat, web search, OCR)
 and **Multimodal_ai** (YouTube download, Whisper speech-to-text, OCR, TTS) — into one
