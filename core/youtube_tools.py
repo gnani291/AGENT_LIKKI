@@ -19,7 +19,6 @@ def download_video(url: str) -> str:
         info = ydl.extract_info(url, download=True)
         return ydl.prepare_filename(info)
 
-
 def download_audio(url: str) -> str:
     """Download audio-only stream as mp3. Returns file path."""
     out_template = os.path.join(DOWNLOAD_DIR, f"%(title).80s-{uuid.uuid4().hex[:6]}.%(ext)s")
