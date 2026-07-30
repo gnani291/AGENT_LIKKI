@@ -47,7 +47,6 @@ def summarize_text(text: str, style: str = "concise") -> str:
     )
     return get_ai_response(prompt)
 
-
 def extract_youtube_url(text: str) -> str | None:
     match = YOUTUBE_URL_RE.search(text)
     return match.group(0) if match else None
