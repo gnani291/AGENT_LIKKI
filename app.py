@@ -39,7 +39,7 @@ with st.sidebar:
         "- `read this out loud`"
     )
 
-# COMMAND BOX
+# command Box
 col1, col2 = st.columns([1, 3])
 
 with col1:
