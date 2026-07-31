@@ -192,7 +192,7 @@ if st.session_state.query:
 
     st.session_state.query = ""
 
-# ---------------------------------------------------------------- FREEFORM TEXT-TO-SPEECH TOOL
+# FREEFORM TEXT-TO-SPEECH TOOL
 st.markdown("---")
 st.subheader("🔊 Text to Speech (standalone)")
 free_text = st.text_area("Enter any text to convert to audio", key="free_tts_text")
@@ -203,7 +203,7 @@ if st.button("Generate Audio"):
     else:
         st.warning("Enter some text first.")
 
-# ---------------------------------------------------------------- CHAT HISTORY
+# CHAT HISTORY
 if st.session_state.chat_history:
     with st.expander("💬 Conversation history"):
         for turn in st.session_state.chat_history:
