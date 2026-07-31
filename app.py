@@ -8,7 +8,7 @@ st.set_page_config(page_title="LIKKI AI - Multimodal Assistant", page_icon="🤖
 st.title("🤖 LIKKI AI - Unified Multimodal Assistant")
 st.caption("One command box. Every feature. Type it or say it.")
 
-# SESSION STATE
+#Session state
 defaults = {
     "chat_history": [],
     "query": "",
