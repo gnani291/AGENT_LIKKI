@@ -92,7 +92,7 @@ with fcol2:
 
 st.markdown("---")
 
-# COMMAND ROUTER
+# command router
 if st.session_state.query:
     query = st.session_state.query
     st.session_state.chat_history.append({"role": "user", "content": query})
