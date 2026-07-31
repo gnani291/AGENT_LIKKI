@@ -107,7 +107,7 @@ if st.session_state.query:
 
     st.subheader(f"🤖 Handling: `{intent}`")
 
-    # --- conversational chat ---
+    # conversational chat
     if intent == "chat":
         reply = ai_brain.get_ai_response(query, history=st.session_state.chat_history)
         st.session_state.last_ai_reply = reply
