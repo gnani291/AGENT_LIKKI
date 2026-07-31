@@ -20,7 +20,7 @@ for k, v in defaults.items():
     if k not in st.session_state:
         st.session_state[k] = v
 
-# SIDEBAR
+# side bar
 with st.sidebar:
     st.header("Settings")
     enable_voice_input = st.checkbox("Enable microphone input", value=False)
