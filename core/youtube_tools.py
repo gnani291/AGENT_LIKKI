@@ -6,6 +6,7 @@ import yt_dlp
 DOWNLOAD_DIR = "downloads"
 os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 
+
 def download_video(url: str) -> str:
     """Download the best available progressive video+audio stream. Returns file path."""
     out_template = os.path.join(DOWNLOAD_DIR, f"%(title).80s-{uuid.uuid4().hex[:6]}.%(ext)s")
