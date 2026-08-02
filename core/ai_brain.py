@@ -51,7 +51,6 @@ def extract_youtube_url(text: str) -> str | None:
     match = YOUTUBE_URL_RE.search(text)
     return match.group(0) if match else None
 
-
 def classify_intent(query: str, has_image: bool = False, has_audio: bool = False) -> dict:
     """
     Lightweight rule-based router. Returns a dict like:
