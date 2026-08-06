@@ -38,7 +38,6 @@ def get_ai_response(user_query: str, history: list | None = None) -> str:
         print("AI ERROR:", e)
         return "Sorry, I am having trouble connecting right now."
 
-
 def summarize_text(text: str, style: str = "concise") -> str:
     """Summarize a transcript / long text block."""
     prompt = (
