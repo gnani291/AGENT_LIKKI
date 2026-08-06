@@ -1,6 +1,5 @@
 import os
 import uuid
-
 import yt_dlp
 
 DOWNLOAD_DIR = "downloads"
