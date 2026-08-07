@@ -19,6 +19,7 @@ YOUTUBE_URL_RE = re.compile(
     r"(https?://)?(www\.)?(youtube\.com/watch\?v=|youtu\.be/)[\w\-]+", re.IGNORECASE
 )
 
+
 def get_ai_response(user_query: str, history: list | None = None) -> str:
     """Plain conversational reply from the LLM."""
     messages = [{"role": "system", "content": SYSTEM_PROMPT}]
