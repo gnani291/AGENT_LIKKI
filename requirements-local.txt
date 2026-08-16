@@ -9,6 +9,5 @@
 # headers + a real sound device, and pyttsx3 needs a local TTS engine
 # (espeak on Linux) — neither exists on a headless cloud container, and a
 # remote server has no access to a user's browser-side microphone anyway.
-
 pyaudio==0.2.13
 pyttsx3==2.90
