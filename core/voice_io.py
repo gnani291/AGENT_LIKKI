@@ -2,6 +2,7 @@ from io import BytesIO
 import speech_recognition as sr
 from gtts import gTTS
 
+
 def listen_from_mic(timeout: int = 6, phrase_time_limit: int = 12) -> str:
     """Capture one utterance from the default microphone and return text.
 
