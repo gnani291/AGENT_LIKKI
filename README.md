@@ -83,3 +83,4 @@ YouTube tools, OCR, file transcription, TTS) works fine remotely; only the
 - Added a new combined flow: **YouTube link → download audio → Whisper
   transcript → Groq summary**, in one voice command.
 update1 
+update2 
