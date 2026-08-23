@@ -84,3 +84,4 @@ YouTube tools, OCR, file transcription, TTS) works fine remotely; only the
   transcript → Groq summary**, in one voice command.
 update1 
 update2 
+update3 
