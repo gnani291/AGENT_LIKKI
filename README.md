@@ -82,3 +82,4 @@ YouTube tools, OCR, file transcription, TTS) works fine remotely; only the
   Whisper transcription into one command router instead of two apps.
 - Added a new combined flow: **YouTube link → download audio → Whisper
   transcript → Groq summary**, in one voice command.
+update1 
