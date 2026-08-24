@@ -1,5 +1,4 @@
 from faster_whisper import WhisperModel
-
 _model_cache = {}
 
 def _get_model(model_size: str = "base"):
