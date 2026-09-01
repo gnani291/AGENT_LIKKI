@@ -3,7 +3,6 @@ import streamlit as st
 from PIL import Image
 from core import ai_brain, ocr, transcribe, voice_io, web_search, youtube_tools
 
-
 st.set_page_config(page_title="LIKKI AI - Multimodal Assistant", page_icon="🤖", layout="wide")
 st.title("🤖 LIKKI AI - Unified Multimodal Assistant")
 st.caption("One command box. Every feature. Type it or say it.")
